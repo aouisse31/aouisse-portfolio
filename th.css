@@ -1,0 +1,266 @@
+
+* { margin: 0; padding: 0; box-sizing: border-box; .prata-regular {
+font-family: "Prata", serif;
+font-weight: 400;
+font-style: normal;
+}
+}
+body, html { height: 100%; scroll-behavior: smooth; }
+
+
+
+header {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  background: rgba(0,0,0,0.6);
+  background: linear-gradient(#0b2c3d,#858d71);
+  background: linear-gradient(#291a40,#b6b6b6);
+ /* background: linear-gradient(#eddde0,#354d6a);*/
+
+  padding: 0 20px;
+}
+
+header h1 {
+  font-size: 3.5em;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.5em;
+  margin-bottom: 30px;
+}
+
+nav {
+  position: fixed;
+  top: 20px;
+  right: 30px;
+}
+
+nav a {
+  color: white;
+  margin-left: 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+section {
+  padding: 80px 20px;
+  background-color: #f7f7f7;
+}
+
+section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2em;
+}
+
+.skills, .projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.contact {
+  text-align: center;
+ 
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #222;
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.card:hover{
+color: blueviolet;
+font-size: x-large;
+}
+nav a:hover{
+
+color: rgb(232, 155, 225);
+font-size: larger;
+}
+.dark-mode-toggle {
+  margin-left: 20px;
+  padding: 5px 10px;
+  background: #444;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.dark-mode-toggle:hover {
+  background: #666;
+}
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+header.dark-mode {
+  background: linear-gradient(#1c1c1c, #333);
+}
+section.dark-mode {
+  background-color: #1e1e1e;
+}
+.card.dark-mode {
+  background: #2a2a2a;
+  color: #fff;
+}
+footer.dark-mode {
+  background: #000;
+}
+
+
+.card2 {
+    width: 250px;
+    height: 350px;
+   /* background-color: white;*/
+  /*  background: linear-gradient(#d72638 ,#2b2d42);*/
+  background: linear-gradient(#b6b1a9 ,#1c3a3e);
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    text-align: center;
+    padding: 20px;
+  }
+  .card2 img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  .card2 h2 {
+    font-size: 24px;
+    margin: 0;
+    letter-spacing: 2px;
+
+  }
+  .card2  .pi {
+    font-size: 18px;
+   background-color: #c983ca;
+    color: white;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-family: monospace;
+  }
+  .card2 .pic{
+    font-size: 18px;
+  /*  background: linear-gradient(#30d5c8 ,#d81b60);*/
+ 
+    color: white;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-family: monospace;
+    margin-top: 1px;
+  }
+  .open {
+    animation-name: openAnim;
+    animation-iteration-count: infinite;
+    animation-duration: 1s; 
+  }
+  
+  @keyframes openAnim {
+    from, 33%, 66%, to { transform: rotate(4deg); }
+    16%, 50%, 83% { transform: rotate(-4deg); }
+  }
+  .pi {
+    animation-name: pin;
+    animation-duration: 1s;
+    animation-iteration-count: infinite; 
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes pin {
+    14%, 42% { transform: scale(1.3) }
+    28%, 70% { transform: scale(1) }
+  }
+  .pic { animation-name: leRotateSkateOutRight;animation-duration: 1s;
+    animation-fill-mode: forwards; }
+@keyframes leRotateSkateOutRight {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+button {
+  background-color:transparent ;
+  border: none;
+  color: white;
+ 
+}
+.link-button {
+  display: inline-block;
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  color: rgb(225, 24, 24);
+  padding: 15px 40px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 12px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.link-button:hover {
+  background: linear-gradient(135deg, #2575fc 0%, #6a11cb 100%);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+.description {
+  background-color: #ffffff;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  max-width: 500px;
+  color: #333;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0 auto;
+}
